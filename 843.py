@@ -125,5 +125,6 @@ def decrypt_words():
 if __name__ == '__main__':
     try:
         decrypt_words()
-    except:
+    except EOFError:
+        # Input on Online Judge doesn't end with an empty line, which causes input() to raise EOFError
         pass
