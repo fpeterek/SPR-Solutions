@@ -114,7 +114,7 @@ def solve(towns):
         remove_unusable(sets, placed, towns - placed)
         remove_redundant(sets)
 
-    # Find two sets with the biggest possible union
+    # Find two sets with the biggest possible union <- greedy approach for the rest of the problem
     while sets:
         if len(sets) == 1:
             placed = placed.union(sets[first(sets)])
