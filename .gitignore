@@ -1,0 +1,10 @@
+.idea
+a.out
+*.swp
+*.txt
+*.in
+*.out
+.DS_Store
+venv/
+__pycache__
+
