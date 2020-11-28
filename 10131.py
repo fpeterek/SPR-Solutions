@@ -21,7 +21,6 @@ def add_to_subs(subs, elephant):
         if elephant.iq > v[-1].iq and (len(v) <= 1 or elephant.iq < v[-2].iq):
             v[-1] = elephant
         if elephant.iq < v[-1].iq and elephant.weight > v[-1].weight:
-            # print('{} < {}'.format(elephant.iq, v[-1].iq))
             copy = v[:]
             copy.append(elephant)
             new[len(copy)] = copy
